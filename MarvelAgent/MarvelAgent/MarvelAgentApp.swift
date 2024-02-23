@@ -7,11 +7,10 @@
 
 import SwiftUI
 
-@main
 struct MarvelAgentApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
