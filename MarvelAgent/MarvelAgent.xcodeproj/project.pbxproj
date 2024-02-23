@@ -8,18 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		79E670B12B88960600C4973A /* MarvelAgentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E670B02B88960600C4973A /* MarvelAgentApp.swift */; };
-		79E670B32B88960600C4973A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E670B22B88960600C4973A /* ContentView.swift */; };
+		79E670B32B88960600C4973A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E670B22B88960600C4973A /* MainView.swift */; };
 		79E670B52B88960600C4973A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E670B42B88960600C4973A /* Assets.xcassets */; };
 		79E670B82B88960600C4973A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E670B72B88960600C4973A /* Preview Assets.xcassets */; };
+		79E670C02B889ACD00C4973A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79E670BF2B889ACD00C4973A /* Info.plist */; };
+		79E670C22B889BC500C4973A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E670C12B889BC500C4973A /* AppDelegate.swift */; };
+		79E670C42B889C8400C4973A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E670C32B889C8400C4973A /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		79E670AD2B88960600C4973A /* MarvelAgent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelAgent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E670B02B88960600C4973A /* MarvelAgentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAgentApp.swift; sourceTree = "<group>"; };
-		79E670B22B88960600C4973A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		79E670B22B88960600C4973A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		79E670B42B88960600C4973A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79E670B72B88960600C4973A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		79E670B92B88960600C4973A /* MarvelAgent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MarvelAgent.entitlements; sourceTree = "<group>"; };
+		79E670BF2B889ACD00C4973A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79E670C12B889BC500C4973A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79E670C32B889C8400C4973A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +58,14 @@
 		79E670AF2B88960600C4973A /* MarvelAgent */ = {
 			isa = PBXGroup;
 			children = (
+				79E670BF2B889ACD00C4973A /* Info.plist */,
 				79E670B02B88960600C4973A /* MarvelAgentApp.swift */,
-				79E670B22B88960600C4973A /* ContentView.swift */,
+				79E670B22B88960600C4973A /* MainView.swift */,
 				79E670B42B88960600C4973A /* Assets.xcassets */,
 				79E670B92B88960600C4973A /* MarvelAgent.entitlements */,
 				79E670B62B88960600C4973A /* Preview Content */,
+				79E670C12B889BC500C4973A /* AppDelegate.swift */,
+				79E670C32B889C8400C4973A /* main.swift */,
 			);
 			path = MarvelAgent;
 			sourceTree = "<group>";
@@ -129,6 +138,7 @@
 			files = (
 				79E670B82B88960600C4973A /* Preview Assets.xcassets in Resources */,
 				79E670B52B88960600C4973A /* Assets.xcassets in Resources */,
+				79E670C02B889ACD00C4973A /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79E670B32B88960600C4973A /* ContentView.swift in Sources */,
+				79E670C22B889BC500C4973A /* AppDelegate.swift in Sources */,
+				79E670B32B88960600C4973A /* MainView.swift in Sources */,
+				79E670C42B889C8400C4973A /* main.swift in Sources */,
 				79E670B12B88960600C4973A /* MarvelAgentApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
