@@ -31,6 +31,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func setupMenus() {
+        NSApp.activate(ignoringOtherApps: true) // Prevent window order warning when menu is shown
+
         let menu = NSMenu()
         
         let one = NSMenuItem(title: "Open Comics", action: #selector(onOpenComicsButtonTapped) , keyEquivalent: "1")
@@ -55,7 +57,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @objc func onTerminateAppButtonTapped() {
-        NSApp.terminate(self)
+        NSApplication.shared.terminate(self)
     }
     
 }
