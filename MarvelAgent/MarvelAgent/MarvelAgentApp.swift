@@ -5,12 +5,13 @@
 //  Created by Pedro Martín Gómez on 23/2/24.
 //
 
-import SwiftUI
+//import SwiftUI
 
-struct MarvelAgentApp: App {
-    var body: some Scene {
-        WindowGroup {
-            MainView()
-        }
-    }
-}
+//@main
+//struct MarvelAgentApp: App {
+//    var body: some Scene {
+//        WindowGroup {
+//            CharacterListFactory.create()
+//        }
+//    }
+//}
