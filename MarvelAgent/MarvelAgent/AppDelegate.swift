@@ -45,14 +45,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem.menu = menu
     }
     
-    @objc func onOpenComicsButtonTapped() {
+    @MainActor @objc func onOpenComicsButtonTapped() {
         window = NSWindow(
             contentRect: NSRect(x: 0, y: 0, width: 680, height: 770),
             styleMask: [.miniaturizable, .closable, .resizable, .titled],
             backing: .buffered, defer: false)
         window.center()
         window.title = "Marvel Comic List"
-        window.contentView = NSHostingView(rootView: MainView())
+        window.contentView = NSHostingView(rootView: CharacterListFactory.create())
         window.makeKeyAndOrderFront(nil)
     }
     
