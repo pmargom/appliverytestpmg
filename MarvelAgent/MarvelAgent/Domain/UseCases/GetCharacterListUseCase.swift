@@ -16,7 +16,6 @@ class GetCharacterListUseCase: GetCharacterListUseCaseProtocol {
         self.repository = repository
     }
     
-//    @MainActor
     func execute() async -> Result<[CharacterEntity], CharacterDomainError> {
         let result = await repository.getCharacterList()
         
