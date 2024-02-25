@@ -1,8 +1,8 @@
 #!/bin/bash
 
-BASE_PATH="../../MarvelAgent-02"
+BASE_PATH="./MarvelAgent-03"
 APP_NAME="MarvelAgent"
-PKG_NAME="MarvelAgent03"
+PKG_NAME="MarvelAgent"
 TEAM_ID="UWCRT7HLJN"
 
 clear

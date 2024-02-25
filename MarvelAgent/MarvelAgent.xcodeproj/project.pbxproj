@@ -332,10 +332,18 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		79E670A42B88960600C4973A = {
+		79B0FA362B8B9AF300132B90 /* Distribution */ = {
 			isa = PBXGroup;
 			children = (
 				79945D662B8B3DF100D817C1 /* taks_script.sh */,
+			);
+			path = Distribution;
+			sourceTree = "<group>";
+		};
+		79E670A42B88960600C4973A = {
+			isa = PBXGroup;
+			children = (
+				79B0FA362B8B9AF300132B90 /* Distribution */,
 				79E670AF2B88960600C4973A /* MarvelAgent */,
 				79945D6D2B8B481300D817C1 /* AutoLauncher */,
 				79945D8D2B8B85A700D817C1 /* MarvelAgentTests */,
@@ -580,7 +588,7 @@
 				CODE_SIGN_ENTITLEMENTS = AutoLauncher/AutoLauncher.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = UWCRT7HLJN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSBackgroundOnly = YES;
@@ -610,7 +618,7 @@
 				CODE_SIGN_ENTITLEMENTS = AutoLauncher/AutoLauncher.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = UWCRT7HLJN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSBackgroundOnly = YES;
@@ -788,7 +796,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"MarvelAgent/Preview Content\"";
 				DEVELOPMENT_TEAM = UWCRT7HLJN;
 				ENABLE_PREVIEWS = YES;
@@ -818,7 +826,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"MarvelAgent/Preview Content\"";
 				DEVELOPMENT_TEAM = UWCRT7HLJN;
 				ENABLE_PREVIEWS = YES;
