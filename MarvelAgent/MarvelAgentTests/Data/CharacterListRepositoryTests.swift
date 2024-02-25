@@ -53,7 +53,6 @@ final class CharacterListRepositoryTests: XCTestCase {
             return
         }
 
-        let capturedCharacterList = try XCTUnwrap(capturedResult.get())
         XCTAssertEqual(error, CharacterDomainError.generic)
     }
 
