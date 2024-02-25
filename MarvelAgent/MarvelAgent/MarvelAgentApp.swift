@@ -7,10 +7,11 @@
 
 import SwiftUI
 
-struct MarvelAgentApp: App {
-    var body: some Scene {
-        WindowGroup {
-            MainView()
-        }
-    }
-}
+//
+//struct MarvelAgentApp: App {
+//    var body: some Scene {
+//        WindowGroup {
+//            CharacterListFactory.create()
+//        }
+//    }
+//}

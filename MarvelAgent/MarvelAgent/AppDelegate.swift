@@ -31,6 +31,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func setupMenus() {
+        NSApp.activate(ignoringOtherApps: true) // Prevent window order warning when menu is shown
+
         let menu = NSMenu()
         
         let one = NSMenuItem(title: "Open Comics", action: #selector(onOpenComicsButtonTapped) , keyEquivalent: "1")
@@ -43,19 +45,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem.menu = menu
     }
     
-    @objc func onOpenComicsButtonTapped() {
+    @MainActor @objc func onOpenComicsButtonTapped() {
         window = NSWindow(
-            contentRect: NSRect(x: 0, y: 0, width: 680, height: 770),
+            contentRect: NSRect(x: 0, y: 0, width: 880, height: 970),
             styleMask: [.miniaturizable, .closable, .resizable, .titled],
             backing: .buffered, defer: false)
         window.center()
-        window.title = "Marvel Comic List"
-        window.contentView = NSHostingView(rootView: MainView())
+        window.title = "Character List"
+        window.contentView = NSHostingView(rootView: CharacterListFactory.create())
         window.makeKeyAndOrderFront(nil)
     }
     
     @objc func onTerminateAppButtonTapped() {
-        NSApp.terminate(self)
+        NSApplication.shared.terminate(self)
     }
     
 }
