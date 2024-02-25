@@ -52,7 +52,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @MainActor @objc func onOpenCharactersButtonTapped() {
         mainWindow = NSWindow(
-            contentRect: NSRect(x: 0, y: 0, width: 880, height: 970),
+            contentRect: NSRect(x: 0, y: 0, width: 880, height: 670),
             styleMask: [.miniaturizable, .closable, .resizable, .titled],
             backing: .buffered, defer: false)
         mainWindow.center()
