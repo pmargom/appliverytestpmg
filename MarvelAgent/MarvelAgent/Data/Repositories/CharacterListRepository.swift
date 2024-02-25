@@ -19,7 +19,6 @@ class CharacterListRepository: CharacterListRepositoryProtocol {
         self.characterDomainMapper = characterDomainMapper
     }
     
-//    @MainActor
     func getCharacterList() async -> Result<[CharacterEntity], CharacterDomainError> {
         let characterModelListResult = await remoteDataSource.getCharacterList()
         
@@ -31,6 +30,4 @@ class CharacterListRepository: CharacterListRepositoryProtocol {
 
         return .success(characterEntityList)
     }
-    
-    
 }

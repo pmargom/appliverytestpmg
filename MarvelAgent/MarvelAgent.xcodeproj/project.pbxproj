@@ -36,6 +36,9 @@
 		79945D812B8B4B8000D817C1 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79945D802B8B4B8000D817C1 /* ServiceManagement.framework */; };
 		79945D872B8B693F00D817C1 /* LaunchAtLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79945D862B8B693F00D817C1 /* LaunchAtLoginView.swift */; };
 		79945D9A2B8B866200D817C1 /* GetCharacterListUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79945D992B8B866200D817C1 /* GetCharacterListUseCaseTests.swift */; };
+		79945D9E2B8B8F1000D817C1 /* CharacterListRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79945D9D2B8B8F1000D817C1 /* CharacterListRepositoryTests.swift */; };
+		79945DA22B8B8F8D00D817C1 /* CharacterListRepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79945DA12B8B8F8D00D817C1 /* CharacterListRepositoryStub.swift */; };
+		79945DA42B8B900500D817C1 /* Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79945DA32B8B900500D817C1 /* Equatable.swift */; };
 		79E670B12B88960600C4973A /* MarvelAgentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E670B02B88960600C4973A /* MarvelAgentApp.swift */; };
 		79E670B32B88960600C4973A /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E670B22B88960600C4973A /* CharacterListView.swift */; };
 		79E670B52B88960600C4973A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E670B42B88960600C4973A /* Assets.xcassets */; };
@@ -99,6 +102,9 @@
 		79945D862B8B693F00D817C1 /* LaunchAtLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAtLoginView.swift; sourceTree = "<group>"; };
 		79945D8C2B8B85A700D817C1 /* MarvelAgentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelAgentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79945D992B8B866200D817C1 /* GetCharacterListUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCharacterListUseCaseTests.swift; sourceTree = "<group>"; };
+		79945D9D2B8B8F1000D817C1 /* CharacterListRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListRepositoryTests.swift; sourceTree = "<group>"; };
+		79945DA12B8B8F8D00D817C1 /* CharacterListRepositoryStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListRepositoryStub.swift; sourceTree = "<group>"; };
+		79945DA32B8B900500D817C1 /* Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equatable.swift; sourceTree = "<group>"; };
 		79E670AD2B88960600C4973A /* MarvelAgent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelAgent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E670B02B88960600C4973A /* MarvelAgentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAgentApp.swift; sourceTree = "<group>"; };
 		79E670B22B88960600C4973A /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
@@ -294,9 +300,36 @@
 		79945D8D2B8B85A700D817C1 /* MarvelAgentTests */ = {
 			isa = PBXGroup;
 			children = (
-				79945D992B8B866200D817C1 /* GetCharacterListUseCaseTests.swift */,
+				79945DA52B8B90D600D817C1 /* Data */,
+				79945D9F2B8B8F6700D817C1 /* Domain */,
+				79945DA02B8B8F7400D817C1 /* Helpers */,
 			);
 			path = MarvelAgentTests;
+			sourceTree = "<group>";
+		};
+		79945D9F2B8B8F6700D817C1 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				79945D992B8B866200D817C1 /* GetCharacterListUseCaseTests.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		79945DA02B8B8F7400D817C1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				79945DA12B8B8F8D00D817C1 /* CharacterListRepositoryStub.swift */,
+				79945DA32B8B900500D817C1 /* Equatable.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		79945DA52B8B90D600D817C1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				79945D9D2B8B8F1000D817C1 /* CharacterListRepositoryTests.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		79E670A42B88960600C4973A = {
@@ -487,7 +520,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79945DA22B8B8F8D00D817C1 /* CharacterListRepositoryStub.swift in Sources */,
 				79945D9A2B8B866200D817C1 /* GetCharacterListUseCaseTests.swift in Sources */,
+				79945DA42B8B900500D817C1 /* Equatable.swift in Sources */,
+				79945D9E2B8B8F1000D817C1 /* CharacterListRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,28 +8,6 @@
 import XCTest
 @testable import MarvelAgent
 
-class CharacterListRepositoryStub: CharacterListRepositoryProtocol {
-    private let result: Result<[CharacterEntity], CharacterDomainError>
-    
-    init(result: Result<[CharacterEntity], CharacterDomainError>) {
-        self.result = result
-    }
-    
-    func getCharacterList() async -> Result<[CharacterEntity], CharacterDomainError> {
-        return result
-    }
-}
-
-extension CharacterEntity: Equatable {
-    public static func == (lhs: CharacterEntity, rhs: CharacterEntity) -> Bool {
-        return lhs.id == rhs.id
-        && lhs.name == rhs.name
-        && lhs.gender == rhs.gender
-        && lhs.species == rhs.species
-        && lhs.image == rhs.image
-    }
-}
-
 final class GetCharacterListUseCaseTests: XCTestCase {
     
     func test_execute_successfully_returns_array_when_repository_returns_nonEmpty_array() async throws {
