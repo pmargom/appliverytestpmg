@@ -8,10 +8,12 @@
 import Foundation
 import Cocoa
 import SwiftUI
+import ServiceManagement
 
 class AppDelegate: NSObject, NSApplicationDelegate {
     
-    private var window: NSWindow!
+    private var mainWindow: NSWindow!
+    private var preferencesWindow: NSWindow!
     private var statusItem: NSStatusItem!
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {        
@@ -35,9 +37,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         let menu = NSMenu()
         
-        let one = NSMenuItem(title: "Open Comics", action: #selector(onOpenComicsButtonTapped) , keyEquivalent: "1")
-        menu.addItem(one)
-        
+        let showDataMenuItem = NSMenuItem(title: "Open Characters", action: #selector(onOpenCharactersButtonTapped) , keyEquivalent: "1")
+        menu.addItem(showDataMenuItem)
+
+        let showPreferencesMenuItem = NSMenuItem(title: "Preferences", action: #selector(onOpenPreferencesButtonTapped) , keyEquivalent: "2")
+        menu.addItem(showPreferencesMenuItem)
+
         menu.addItem(NSMenuItem.separator())
         
         menu.addItem(NSMenuItem(title: "Exit", action: #selector(onTerminateAppButtonTapped), keyEquivalent: "q"))
@@ -45,15 +50,26 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem.menu = menu
     }
     
-    @MainActor @objc func onOpenComicsButtonTapped() {
-        window = NSWindow(
+    @MainActor @objc func onOpenCharactersButtonTapped() {
+        mainWindow = NSWindow(
             contentRect: NSRect(x: 0, y: 0, width: 880, height: 970),
             styleMask: [.miniaturizable, .closable, .resizable, .titled],
             backing: .buffered, defer: false)
-        window.center()
-        window.title = "Character List"
-        window.contentView = NSHostingView(rootView: CharacterListFactory.create())
-        window.makeKeyAndOrderFront(nil)
+        mainWindow.center()
+        mainWindow.title = "Character List"
+        mainWindow.contentView = NSHostingView(rootView: CharacterListFactory.create())
+        mainWindow.makeKeyAndOrderFront(nil)
+    }
+    
+    @MainActor @objc func onOpenPreferencesButtonTapped() {
+        preferencesWindow = NSWindow(
+            contentRect: NSRect(x: 0, y: 0, width: 200, height: 100),
+            styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
+            backing: .buffered, defer: false)
+        preferencesWindow.center()
+        preferencesWindow.setFrameAutosaveName("Preferences")
+        preferencesWindow.contentView = NSHostingView(rootView: LaunchAtLoginView())
+        preferencesWindow.makeKeyAndOrderFront(nil)
     }
     
     @objc func onTerminateAppButtonTapped() {

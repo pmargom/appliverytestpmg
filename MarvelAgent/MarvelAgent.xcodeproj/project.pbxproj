@@ -30,6 +30,11 @@
 		79945D5F2B8A4F8900D817C1 /* ApiResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79945D5E2B8A4F8900D817C1 /* ApiResponseModel.swift */; };
 		79945D652B8B332500D817C1 /* CharacterDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79945D642B8B332500D817C1 /* CharacterDetailsView.swift */; };
 		79945D672B8B3DF100D817C1 /* taks_script.sh in Resources */ = {isa = PBXBuildFile; fileRef = 79945D662B8B3DF100D817C1 /* taks_script.sh */; };
+		79945D6F2B8B481300D817C1 /* AutoLauncherAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79945D6E2B8B481300D817C1 /* AutoLauncherAppDelegate.swift */; };
+		79945D7C2B8B4A3B00D817C1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79945D7B2B8B4A3B00D817C1 /* main.swift */; };
+		79945D7E2B8B4B3F00D817C1 /* AutoLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79945D6C2B8B481300D817C1 /* AutoLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		79945D812B8B4B8000D817C1 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79945D802B8B4B8000D817C1 /* ServiceManagement.framework */; };
+		79945D872B8B693F00D817C1 /* LaunchAtLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79945D862B8B693F00D817C1 /* LaunchAtLoginView.swift */; };
 		79E670B12B88960600C4973A /* MarvelAgentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E670B02B88960600C4973A /* MarvelAgentApp.swift */; };
 		79E670B32B88960600C4973A /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E670B22B88960600C4973A /* CharacterListView.swift */; };
 		79E670B52B88960600C4973A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E670B42B88960600C4973A /* Assets.xcassets */; };
@@ -37,6 +42,19 @@
 		79E670C22B889BC500C4973A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E670C12B889BC500C4973A /* AppDelegate.swift */; };
 		79E670C42B889C8400C4973A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E670C32B889C8400C4973A /* main.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		79945D7D2B8B4AFD00D817C1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				79945D7E2B8B4B3F00D817C1 /* AutoLauncher.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		79945D2A2B8A250000D817C1 /* GetCharacterListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCharacterListUseCase.swift; sourceTree = "<group>"; };
@@ -62,6 +80,12 @@
 		79945D5E2B8A4F8900D817C1 /* ApiResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponseModel.swift; sourceTree = "<group>"; };
 		79945D642B8B332500D817C1 /* CharacterDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsView.swift; sourceTree = "<group>"; };
 		79945D662B8B3DF100D817C1 /* taks_script.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = taks_script.sh; sourceTree = "<group>"; };
+		79945D6C2B8B481300D817C1 /* AutoLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79945D6E2B8B481300D817C1 /* AutoLauncherAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLauncherAppDelegate.swift; sourceTree = "<group>"; };
+		79945D772B8B481400D817C1 /* AutoLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoLauncher.entitlements; sourceTree = "<group>"; };
+		79945D7B2B8B4A3B00D817C1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		79945D802B8B4B8000D817C1 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		79945D862B8B693F00D817C1 /* LaunchAtLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAtLoginView.swift; sourceTree = "<group>"; };
 		79E670AD2B88960600C4973A /* MarvelAgent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelAgent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E670B02B88960600C4973A /* MarvelAgentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAgentApp.swift; sourceTree = "<group>"; };
 		79E670B22B88960600C4973A /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
@@ -73,10 +97,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		79945D692B8B481300D817C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		79E670AA2B88960600C4973A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79945D812B8B4B8000D817C1 /* ServiceManagement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +240,7 @@
 			children = (
 				79E670B22B88960600C4973A /* CharacterListView.swift */,
 				79945D642B8B332500D817C1 /* CharacterDetailsView.swift */,
+				79945D862B8B693F00D817C1 /* LaunchAtLoginView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -220,12 +253,32 @@
 			path = Composition;
 			sourceTree = "<group>";
 		};
+		79945D6D2B8B481300D817C1 /* AutoLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				79945D6E2B8B481300D817C1 /* AutoLauncherAppDelegate.swift */,
+				79945D772B8B481400D817C1 /* AutoLauncher.entitlements */,
+				79945D7B2B8B4A3B00D817C1 /* main.swift */,
+			);
+			path = AutoLauncher;
+			sourceTree = "<group>";
+		};
+		79945D7F2B8B4B8000D817C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79945D802B8B4B8000D817C1 /* ServiceManagement.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		79E670A42B88960600C4973A = {
 			isa = PBXGroup;
 			children = (
 				79945D662B8B3DF100D817C1 /* taks_script.sh */,
 				79E670AF2B88960600C4973A /* MarvelAgent */,
+				79945D6D2B8B481300D817C1 /* AutoLauncher */,
 				79E670AE2B88960600C4973A /* Products */,
+				79945D7F2B8B4B8000D817C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -233,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				79E670AD2B88960600C4973A /* MarvelAgent.app */,
+				79945D6C2B8B481300D817C1 /* AutoLauncher.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -267,6 +321,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		79945D6B2B8B481300D817C1 /* AutoLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79945D7A2B8B481400D817C1 /* Build configuration list for PBXNativeTarget "AutoLauncher" */;
+			buildPhases = (
+				79945D682B8B481300D817C1 /* Sources */,
+				79945D692B8B481300D817C1 /* Frameworks */,
+				79945D6A2B8B481300D817C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoLauncher;
+			productName = AutoLauncher;
+			productReference = 79945D6C2B8B481300D817C1 /* AutoLauncher.app */;
+			productType = "com.apple.product-type.application";
+		};
 		79E670AC2B88960600C4973A /* MarvelAgent */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79E670BC2B88960600C4973A /* Build configuration list for PBXNativeTarget "MarvelAgent" */;
@@ -274,6 +345,7 @@
 				79E670A92B88960600C4973A /* Sources */,
 				79E670AA2B88960600C4973A /* Frameworks */,
 				79E670AB2B88960600C4973A /* Resources */,
+				79945D7D2B8B4AFD00D817C1 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -294,6 +366,9 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					79945D6B2B8B481300D817C1 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 					79E670AC2B88960600C4973A = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -313,11 +388,19 @@
 			projectRoot = "";
 			targets = (
 				79E670AC2B88960600C4973A /* MarvelAgent */,
+				79945D6B2B8B481300D817C1 /* AutoLauncher */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		79945D6A2B8B481300D817C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		79E670AB2B88960600C4973A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -331,6 +414,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		79945D682B8B481300D817C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79945D7C2B8B4A3B00D817C1 /* main.swift in Sources */,
+				79945D6F2B8B481300D817C1 /* AutoLauncherAppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		79E670A92B88960600C4973A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,6 +443,7 @@
 				79945D2E2B8A254600D817C1 /* CharacterEntity.swift in Sources */,
 				79945D5F2B8A4F8900D817C1 /* ApiResponseModel.swift in Sources */,
 				79945D5C2B8A47BB00D817C1 /* CharacterListFactory.swift in Sources */,
+				79945D872B8B693F00D817C1 /* LaunchAtLoginView.swift in Sources */,
 				79945D4E2B8A38A300D817C1 /* HttpClientProtocol.swift in Sources */,
 				79945D542B8A3F7000D817C1 /* URLRequestBuilder.swift in Sources */,
 				79945D452B8A336D00D817C1 /* Extensions.swift in Sources */,
@@ -367,6 +460,66 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		79945D782B8B481400D817C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AutoLauncher/AutoLauncher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = UWCRT7HLJN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSBackgroundOnly = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thetechnicaljob.AutoLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		79945D792B8B481400D817C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AutoLauncher/AutoLauncher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = UWCRT7HLJN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSBackgroundOnly = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thetechnicaljob.AutoLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		79E670BA2B88960600C4973A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -489,7 +642,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"MarvelAgent/Preview Content\"";
 				DEVELOPMENT_TEAM = UWCRT7HLJN;
 				ENABLE_PREVIEWS = YES;
@@ -519,7 +672,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"MarvelAgent/Preview Content\"";
 				DEVELOPMENT_TEAM = UWCRT7HLJN;
 				ENABLE_PREVIEWS = YES;
@@ -543,6 +696,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		79945D7A2B8B481400D817C1 /* Build configuration list for PBXNativeTarget "AutoLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79945D782B8B481400D817C1 /* Debug */,
+				79945D792B8B481400D817C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		79E670A82B88960600C4973A /* Build configuration list for PBXProject "MarvelAgent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
