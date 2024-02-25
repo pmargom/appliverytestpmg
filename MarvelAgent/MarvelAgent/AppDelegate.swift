@@ -47,11 +47,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @MainActor @objc func onOpenComicsButtonTapped() {
         window = NSWindow(
-            contentRect: NSRect(x: 0, y: 0, width: 680, height: 770),
+            contentRect: NSRect(x: 0, y: 0, width: 880, height: 970),
             styleMask: [.miniaturizable, .closable, .resizable, .titled],
             backing: .buffered, defer: false)
         window.center()
-        window.title = "Marvel Comic List"
+        window.title = "Character List"
         window.contentView = NSHostingView(rootView: CharacterListFactory.create())
         window.makeKeyAndOrderFront(nil)
     }

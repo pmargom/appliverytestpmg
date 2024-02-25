@@ -28,6 +28,7 @@
 		79945D582B8A3FE800D817C1 /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79945D572B8A3FE800D817C1 /* CharacterListViewModel.swift */; };
 		79945D5C2B8A47BB00D817C1 /* CharacterListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79945D5B2B8A47BB00D817C1 /* CharacterListFactory.swift */; };
 		79945D5F2B8A4F8900D817C1 /* ApiResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79945D5E2B8A4F8900D817C1 /* ApiResponseModel.swift */; };
+		79945D652B8B332500D817C1 /* CharacterDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79945D642B8B332500D817C1 /* CharacterDetailsView.swift */; };
 		79E670B12B88960600C4973A /* MarvelAgentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E670B02B88960600C4973A /* MarvelAgentApp.swift */; };
 		79E670B32B88960600C4973A /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E670B22B88960600C4973A /* CharacterListView.swift */; };
 		79E670B52B88960600C4973A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E670B42B88960600C4973A /* Assets.xcassets */; };
@@ -57,8 +58,8 @@
 		79945D552B8A3F9400D817C1 /* URLResponseErrorProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLResponseErrorProcessor.swift; sourceTree = "<group>"; };
 		79945D572B8A3FE800D817C1 /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
 		79945D5B2B8A47BB00D817C1 /* CharacterListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListFactory.swift; sourceTree = "<group>"; };
-		79945D5D2B8A4B5300D817C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		79945D5E2B8A4F8900D817C1 /* ApiResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponseModel.swift; sourceTree = "<group>"; };
+		79945D642B8B332500D817C1 /* CharacterDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsView.swift; sourceTree = "<group>"; };
 		79E670AD2B88960600C4973A /* MarvelAgent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelAgent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E670B02B88960600C4973A /* MarvelAgentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAgentApp.swift; sourceTree = "<group>"; };
 		79E670B22B88960600C4973A /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
@@ -204,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				79E670B22B88960600C4973A /* CharacterListView.swift */,
+				79945D642B8B332500D817C1 /* CharacterDetailsView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -235,7 +237,6 @@
 		79E670AF2B88960600C4973A /* MarvelAgent */ = {
 			isa = PBXGroup;
 			children = (
-				79945D5D2B8A4B5300D817C1 /* Info.plist */,
 				79945D5A2B8A479C00D817C1 /* Composition */,
 				79E670B92B88960600C4973A /* MarvelAgent.entitlements */,
 				79E670C12B889BC500C4973A /* AppDelegate.swift */,
@@ -355,6 +356,7 @@
 				79945D3E2B8A2B4100D817C1 /* RemoteDataSourceProtocol.swift in Sources */,
 				79945D4A2B8A385B00D817C1 /* Endpoint.swift in Sources */,
 				79E670B12B88960600C4973A /* MarvelAgentApp.swift in Sources */,
+				79945D652B8B332500D817C1 /* CharacterDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,7 +413,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -465,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -493,6 +495,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thetechnicaljob.MarvelAgent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -520,6 +523,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thetechnicaljob.MarvelAgent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
